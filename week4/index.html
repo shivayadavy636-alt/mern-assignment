@@ -2,113 +2,68 @@
 <html lang="en">
 
 <head>
-    <!-- Task 4.4: Meta tags -->
+    <!-- Task 4.4: Meta tags & Favicon -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week 4 Web Development Assignment - Forms, Tables, Meta tags and Favicon">
-    <meta name="keywords" content="HTML, Forms, Table, Meta Tags, Favicon, Web Development">
+    <meta name="description" content="Home Page - Week 4 Web Development Assignment">
+    <meta name="keywords" content="HTML, Home, Navigation, Web Development">
     <meta name="author" content="Shivayadav">
-
-    <!-- Task 4.4: Favicon -->
     <link rel="icon" type="image/x-icon" href="https://via.placeholder.com/16">
-
-    <title>Week 4 Assignment</title>
+    <title>Home - Week 4 Assignment</title>
 </head>
 
 <body>
 
-    <h2>Task 4.1 & 4.2: Registration & Details Form</h2>
-
-    <form action="#" method="POST">
-        <div>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob">
-        </div>
-        <br>
-
-        <div>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
-        </div>
-        <br>
-
-        <div>
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
-        <br>
-
-        <div>
-            <label>Interests:</label>
-            <input type="checkbox" id="coding" name="interests" value="coding">
-            <label for="coding">Coding</label>
-            <input type="checkbox" id="design" name="interests" value="design">
-            <label for="design">Design</label>
-        </div>
-        <br>
-
-        <div>
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-                <option value="india">India</option>
-                <option value="usa">USA</option>
-                <option value="uk">UK</option>
-            </select>
-        </div>
-        <br>
-
-        <div>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="30"></textarea>
-        </div>
-        <br>
-
-        <div>
-            <button type="submit">Submit Form</button>
-        </div>
-    </form>
-
+    <!-- Task 4.5: Navigation Menu Linking 4 Pages -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="register.html">Register</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
     <hr>
 
-    <!-- Task 4.3: Events Table -->
-    <h2>Task 4.3: Events Schedule Table</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Event Name</th>
-                <th>Date</th>
-                <th>Location</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Web Dev Bootcamp</td>
-                <td>2026-11-05</td>
-                <td>Online / Zoom</td>
-            </tr>
-            <tr>
-                <td>Hackathon 2026</td>
-                <td>2026-11-12</td>
-                <td>Main Hall</td>
-            </tr>
+    <main>
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the main page of the 4-page website project for Week 4 assignment.</p>
+
+        <!-- Task 4.3: Events Table -->
+        <h2>Events Schedule Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Dev Bootcamp</td>
+                    <td>2026-11-05</td>
+                    <td>Online / Zoom</td>
+                </tr>
+                <tr>
+                    <td>Hackathon 2026</td>
+                    <td>2026-11-12</td>
+                    <td>Main Hall</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Workshop</td>
+                    <td>2026-11-20</td>
+                    <td>Lab 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Events: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+</body>
+
+</html>
