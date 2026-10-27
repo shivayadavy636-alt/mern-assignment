@@ -5,63 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 5 Assignment</title>
+
+    <!-- Task 5.3: Google Font (Poppins) Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
-        /* Task 5.2 - Selector 1: Universal Selector (*) */
+        /* Task 5.2 - Universal Selector */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
+        /* Task 5.3 - Typography & Colors using Google Font */
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2b2b2b;
             background-color: #f4f4f9;
+            padding: 20px;
         }
 
-        /* Task 5.2 - Selector 2: Element Selector (h1) */
+        /* Task 5.2 & 5.3 - Element Selector (h1) */
         h1 {
-            color: #2c3e50;
+            font-size: 2rem;
+            color: #1a2a3a;
+            line-height: 1.3;
             margin-bottom: 15px;
         }
 
-        /* Task 5.2 - Selector 3: ID Selector (#hero) */
+        /* Task 5.2 & 5.3 - ID Selector (#hero) */
         #hero {
-            background-color: #3498db;
-            color: white;
-            padding: 20px;
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 25px;
             border-radius: 8px;
             margin-bottom: 20px;
         }
 
-        /* Task 5.2 - Selector 4: Class Selector (.card) */
+        #hero p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        /* Task 5.2 & 5.3 - Class Selector (.card) */
         .card {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 10px;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #4b5563;
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Task 5.2: ID Selector usage -->
+    <!-- Task 5.2 & 5.3: ID Selector & Typography -->
     <div id="hero">
-        <h1>Task 5.2: CSS Selectors Demo</h1>
-        <p>This hero section uses the #hero ID selector and h1 element selector.</p>
+        <h1>Task 5.3: Google Fonts & Typography</h1>
+        <p>This page uses the Google Font 'Poppins' with customized font size, colors, and line-height for better
+            readability.</p>
     </div>
 
-    <!-- Task 5.2: Class Selector usage -->
+    <!-- Task 5.2 & 5.3: Class Selector & Card styling -->
     <div class="card">
-        <h2>Card Component 1</h2>
-        <p>This card uses the .card class selector.</p>
+        <h2>Card Title 1</h2>
+        <p>Styled with clean typography, appropriate font sizes, line-height, and soft contrast colors.</p>
     </div>
 
     <div class="card">
-        <h2>Card Component 2</h2>
-        <p>Reusing the .card class selector for consistent styling.</p>
+        <h2>Card Title 2</h2>
+        <p>Google Fonts improve the overall text presentation and visual hierarchy of the web page.</p>
     </div>
 
 </body>
