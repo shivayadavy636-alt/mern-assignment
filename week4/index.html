@@ -8,27 +8,83 @@
 
 <body>
 
-    <h2>Task 4.1: User Registration Form</h2>
+    <h2>Task 4.1 & 4.2: Registration & Details Form</h2>
 
     <form action="#" method="POST">
-        <!-- Name Field -->
+        <!-- Task 4.1 Inputs -->
         <div>
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
         </div>
         <br>
 
-        <!-- Email Field -->
         <div>
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required>
         </div>
         <br>
 
-        <!-- Password Field -->
         <div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+
+        <!-- Task 4.2: Date of Birth -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <br>
+
+        <!-- Task 4.2: Phone Number -->
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <br>
+
+        <!-- Task 4.2: Radio Buttons -->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+
+        <!-- Task 4.2: Checkboxes -->
+        <div>
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="design" name="interests" value="design">
+            <label for="design">Design</label>
+        </div>
+        <br>
+
+        <!-- Task 4.2: Dropdown (Select) -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- Task 4.2: Textarea (Message Box) -->
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </div>
+        <br>
+
+        <!-- Task 4.2: Submit Button -->
+        <div>
+            <button type="submit">Submit Form</button>
         </div>
     </form>
 
