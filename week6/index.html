@@ -4,69 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 6 Assignment</title>
+    <title>Week 6 Assignment - Box Model & Positioning</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Task 6.4: Sticky Top Bar -->
+    <!-- Task 6.4: Sticky Top Bar Header -->
     <header class="top-bar">
-        <h2>Dashboard Header</h2>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Cards</a>
-            <a href="#">Settings</a>
+        <h2 class="top-bar__title">Dashboard</h2>
+        <nav class="top-bar__nav">
+            <a href="#" class="top-bar__link">Home</a>
+            <a href="#" class="top-bar__link">Cards</a>
+            <a href="#" class="top-bar__link">Settings</a>
         </nav>
     </header>
 
     <main class="content">
-        <h1 style="text-align: center; margin-bottom: 20px;">Task 6.4: Sticky Bar & Fixed Floating Button</h1>
+        <!-- Task 6.1: Box Model Setup Section -->
+        <section class="box-model-demo">
+            <h2>Task 6.1: Box Model Demo</h2>
+            <p>Uses box-sizing: border-box with clear padding, border, and margin rules.</p>
+        </section>
 
-        <div class="cards-container">
-            <!-- Card 1: Blue Version -->
-            <div class="profile-card card--blue">
-                <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
-                <h3>Shivay Yadav</h3>
-                <p class="role">Frontend Developer</p>
-                <div class="bio-box">
+        <!-- Task 6.2 & 6.3: Profile Cards Section -->
+        <section class="cards-container">
+            <!-- Card 1: Blue Modifier -->
+            <article class="profile-card profile-card--blue">
+                <img src="https://via.placeholder.com/100" alt="Shivay Yadav Avatar" class="profile-card__avatar">
+                <h3 class="profile-card__name">Shivay Yadav</h3>
+                <p class="profile-card__role">Frontend Developer</p>
+                <div class="profile-card__bio">
                     <p>Passionate developer working on MERN stack projects. Learning HTML5, CSS3, JavaScript, React, and
                         Node.js. Enjoys building responsive designs, clean user interfaces, and modular backend APIs.
                     </p>
                 </div>
-            </div>
+            </article>
 
-            <!-- Card 2: Green Version -->
-            <div class="profile-card card--green">
-                <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
-                <h3>Rahul Sharma</h3>
-                <p class="role">UI/UX Designer</p>
-                <div class="bio-box">
+            <!-- Card 2: Green Modifier -->
+            <article class="profile-card profile-card--green">
+                <img src="https://via.placeholder.com/100" alt="Rahul Sharma Avatar" class="profile-card__avatar">
+                <h3 class="profile-card__name">Rahul Sharma</h3>
+                <p class="profile-card__role">UI/UX Designer</p>
+                <div class="profile-card__bio">
                     <p>Creative designer focusing on visual design systems, user experience prototyping, wireframing,
                         typography, and accessibility. Loves crafting interactive user journeys.</p>
                 </div>
-            </div>
+            </article>
 
-            <!-- Card 3: Purple Version -->
-            <div class="profile-card card--purple">
-                <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
-                <h3>Aman Verma</h3>
-                <p class="role">Full Stack Engineer</p>
-                <div class="bio-box">
+            <!-- Card 3: Purple Modifier -->
+            <article class="profile-card profile-card--purple">
+                <img src="https://via.placeholder.com/100" alt="Aman Verma Avatar" class="profile-card__avatar">
+                <h3 class="profile-card__name">Aman Verma</h3>
+                <p class="profile-card__role">Full Stack Engineer</p>
+                <div class="profile-card__bio">
                     <p>Specialized in database optimization, server architectures, GraphQL, REST APIs, and modern
                         frontend frameworks like React and Next.js.</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Extra content to enable page scrolling -->
-        <div style="height: 600px; padding-top: 40px; text-align: center;">
-            <p>Scroll down to test the sticky top bar behavior!</p>
-        </div>
+            </article>
+        </section>
     </main>
 
-    <!-- Task 6.4: Fixed Floating Action Button (+) -->
-    <button class="add-btn" title="Add New Card">+</button>
+    <!-- Task 6.4: Fixed Floating Action Button -->
+    <button class="fab-btn" title="Add New Card" aria-label="Add Card">+</button>
 
 </body>
 
