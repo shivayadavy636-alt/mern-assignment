@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3 - Task 3.2 Structure</title>
+    <title>Week 3 - Task 3.3 Form & Media</title>
 </head>
 
 <body>
@@ -14,7 +14,8 @@
         <nav>
             <a href="index.html">Home</a> |
             <a href="#services">Services</a> |
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a> |
+            <a href="#media">Media</a>
         </nav>
     </header>
 
@@ -22,8 +23,8 @@
 
     <main>
         <section id="hero">
-            <h2>Welcome to Task 3.2</h2>
-            <p>This page demonstrates proper HTML5 semantic elements and layout structuring.</p>
+            <h2>Welcome to Task 3.3</h2>
+            <p>This page demonstrates HTML forms and media elements.</p>
         </section>
 
         <section id="services">
@@ -31,18 +32,29 @@
             <p>We provide step-by-step guidance for completing web development assignments.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Reach out to us for any assignment queries.</p>
+        <section id="media">
+            <h2>Media Gallery</h2>
+            <article>
+                <h3>Sample Image</h3>
+                <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image">
+            </article>
         </section>
-    </main>
 
-    <hr>
-
-    <footer>
-        <p>&copy; 2026 Student Portal. All rights reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="
