@@ -5,25 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 5 Assignment</title>
-    <!-- Task 5.1: Internal CSS inside <style> tag -->
     <style>
+        /* Task 5.2 - Selector 1: Universal Selector (*) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
             padding: 20px;
             background-color: #f4f4f9;
         }
 
+        /* Task 5.2 - Selector 2: Element Selector (h1) */
         h1 {
-            color: #333;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Task 5.2 - Selector 3: ID Selector (#hero) */
+        #hero {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Task 5.2 - Selector 4: Class Selector (.card) */
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Task 5.1: Internal CSS Setup</h1>
-    <p>CSS is added inside the style tag in the head section.</p>
+    <!-- Task 5.2: ID Selector usage -->
+    <div id="hero">
+        <h1>Task 5.2: CSS Selectors Demo</h1>
+        <p>This hero section uses the #hero ID selector and h1 element selector.</p>
+    </div>
+
+    <!-- Task 5.2: Class Selector usage -->
+    <div class="card">
+        <h2>Card Component 1</h2>
+        <p>This card uses the .card class selector.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card Component 2</h2>
+        <p>Reusing the .card class selector for consistent styling.</p>
+    </div>
 
 </body>
 
